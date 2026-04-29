@@ -41,7 +41,7 @@ Server environment variables:
 - `OPENAI_API_KEY`: Your OpenAI API key
 - `OPENAI_MODEL`: Model name, such as `gpt-4.1-mini`
 - `PORT`: Backend port, default `4000`
-- `CLIENT_ORIGIN`: Frontend origin for CORS, default `http://localhost:5173`
+- `CLIENT_ORIGIN`: Comma-separated allowed frontend origins for CORS, for example `http://localhost:5173,https://persona-ai-chatbot-six.vercel.app`
 
 Client environment variables:
 
@@ -95,7 +95,7 @@ Client:
    - `OPENAI_API_KEY`
    - `OPENAI_MODEL`
    - `PORT` if your platform requires one
-   - `CLIENT_ORIGIN` to your deployed frontend URL
+   - `CLIENT_ORIGIN` to your allowed frontend origins, for example `http://localhost:5173,https://persona-ai-chatbot-six.vercel.app`
 3. Start command: `npm start`
 
 ## API
@@ -129,4 +129,3 @@ Response body:
 
 - Persona prompts are stored centrally in the backend and also documented in [prompts.md](./prompts.md).
 - A short build reflection is included in [reflection.md](./reflection.md).
-
